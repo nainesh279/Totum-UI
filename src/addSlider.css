@@ -1,0 +1,234 @@
+/* Variables */
+/* Colors */
+/* Sizes */
+/* line 1, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+.addui-slider {
+  display: block;
+  box-sizing: border-box; }
+  /* line 5, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+  .addui-slider * {
+    box-sizing: border-box; }
+  /* line 7, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+  .addui-slider:not(.addui-slider-isrange) {
+    cursor: default; }
+  /* line 11, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+  .addui-slider .addui-slider-track {
+    display: block;
+    position: relative;
+    background: #A9A9A9;
+    border-radius: 4px; }
+    /* line 17, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+    .addui-slider .addui-slider-track .addui-slider-range {
+      display: block;
+      background: #547791;
+      border-radius: 4px;
+      position: absolute;
+	}
+    /* line 24, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+    .addui-slider .addui-slider-track .addui-slider-handle {
+      display: block;
+      width: 46px;
+      height: 46px;
+      background: rgba(63, 81, 181, 0);
+      box-shadow: 0 0 5px rgba(63, 81, 181, 0);
+      position: absolute;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 1s, box-shadow 1s;
+      z-index: 0; }
+	  
+	  .addui-slider-handle-static {
+      display: block;
+      width: 44px;
+      height: 44px;
+      background: rgba(63, 81, 181, 0);
+      box-shadow: 0 0 5px rgba(63, 81, 181, 0);
+      position: absolute;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background 1s, box-shadow 1s;
+      z-index: 999; }
+      /* line 36, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+      .addui-slider .addui-slider-track .addui-slider-handle .addui-slider-value {
+        display: block;
+        float: right;
+        background: rgba(63, 81, 181, 0);
+        width: 45px;
+        height: 46px;
+        border-radius: 50%;
+        margin-top: 0px;
+        color: white;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 1s, background 1s, transform 1s, margin 1s, border-radius 1s;
+        transform: scale(1, 0) rotate(-135deg);
+        transform-style: preserve-3d;
+        position: absolute;
+        z-index: 1; }
+        /* line 53, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+        .addui-slider .addui-slider-track .addui-slider-handle .addui-slider-value span {
+          display: block;
+          transform: rotate(135deg);
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          line-height: 50px;
+          position: absolute;
+          z-index: 1; }
+      /* line 65, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+      
+        /* line 68, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+        .addui-slider .addui-slider-track .addui-slider-handle .addui-slider-value {
+          background: #547791;
+          opacity: 1;
+		      margin-left: 0px;
+          transform: scale(1, 1) rotate(-135deg);
+          margin-top: -46px;
+          border-radius: 0 50% 50% 50%; }
+      .addui-slider .addui-slider-track .addui-slider-handle.addui-slider-handle-active {
+	  background: #DCE3E9;}
+	  .addui-slider .addui-slider-track .addui-slider-handle.addui-slider-handle:hover{
+	  background: #DCE3E9;}
+	  .addui-slider .addui-slider-track .addui-slider-handle.addui-slider-handle:hover .addui-slider-value{
+	  margin-top: -54px;}
+        .addui-slider .addui-slider-track .addui-slider-handle.addui-slider-handle-active .addui-slider-value {
+          background: #547791;
+          opacity: 1;
+          transform: scale(1, 1) rotate(-135deg);
+          margin-top: -54px;
+          border-radius: 0 50% 50% 50%; }
+      /* line 90, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+      .addui-slider .addui-slider-track .addui-slider-handle:after {
+        display: block;
+        content: " ";
+        width: 30px;
+        height: 30px;
+        background: #547791;
+        border-radius: 25px;
+        position: relative;
+        top: 9px;
+        left: 8px; }
+		
+  /* line 105, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+  .addui-slider.addui-slider-vertical {
+    height: calc(100% - 50px);
+    width: 50px;
+    margin: 25px 16px; }
+    /* line 110, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+    .addui-slider.addui-slider-vertical .addui-slider-track {
+      height: 100%;
+      width: 10px;
+      top: 0;
+      left: 23px; }
+      /* line 116, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+      .addui-slider.addui-slider-vertical .addui-slider-track .addui-slider-range {
+        width: 10px;
+        height: auto; }
+      /* line 121, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+      .addui-slider.addui-slider-vertical .addui-slider-track .addui-slider-handle {
+        left: -24px;
+        top: auto;
+        transform: translateY(50%); }
+        /* line 126, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+        .addui-slider.addui-slider-vertical .addui-slider-track .addui-slider-handle.addui-slider-handle-l {
+          z-index: 2; }
+		  .addui-slider-handle-static{
+        left: -24px;
+        top: auto;
+        transform: translateY(50%); 
+		cursor: default !important;}
+        /* line 126, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+        .addui-slider.addui-slider-vertical .addui-slider-track .addui-slider-handle.addui-slider-handle-l {
+          z-index: 2; }
+  /* line 133, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+  .addui-slider.addui-slider-horizontal {
+    height: 50px;
+    width: calc(100% - 50px);
+    margin: 68px 25px; }
+    /* line 138, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+    .addui-slider.addui-slider-horizontal .addui-slider-track {
+      height: 22px;
+      width: 95%;
+      top: 43px;
+      left: 6px;
+cursor: default !important;	  }
+      /* line 144, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+      .addui-slider.addui-slider-horizontal .addui-slider-track .addui-slider-range {
+        width: auto;
+        height: 22px; }
+      /* line 149, C:/wamp/www/github/addSlider/src/partials/_addSlider.scss */
+      .addui-slider.addui-slider-horizontal .addui-slider-track .addui-slider-handle {
+        left: auto;
+        top: -13px;
+        transform: translateX(-50%); }
+
+/*# sourceMappingURL=addSlider.css.map */
+.range_slider_value_high {
+    display: inline-block;
+    float: right;
+    width: 30px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    background: #2c3e50;
+    padding: 5px 10px;
+    margin-right: 18px;
+    top: 110px;
+	    margin-top: 106px;	
+}
+.range_slider_value_low {
+        display: inline-block;
+    position: absolute;
+    width: 30px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    background: #2c3e50;
+    padding: 5px 10px;
+    margin-left: 0px;
+    top: 157px;
+}
+.addui-slider-handle-static .addui-slider-value {
+    background: #696969 !important;
+    opacity: 1 !important;
+    margin-left: 14px;
+    transform: scale(1, 1) rotate(-135deg) !important;
+    margin-top: -35px !important;
+    border-radius: 0 50% 50% 50% !important;
+    display: block;
+    float: right;
+	width: 35px;
+    height: 35px;
+	color: white;
+	pointer-events: none;
+    transition: opacity 1s, background 1s, transform 1s, margin 1s, border-radius 1s;
+	transform-style: preserve-3d;
+    position: absolute;
+    z-index: 1;
+	cursor: default !important;
+	    top: 75px;
+}
+.addui-slider-handle-static:after {
+    display: block;
+    content: " ";
+    width: 30px;
+    height: 30px;
+    background: #696969 !important;
+    border-radius: 25px;
+    position: relative;
+    top: 85px;
+    left: 16px;
+	    z-index: 9999999;
+}
+.addui-slider-handle-static .addui-slider-value span {
+    display: block;
+    transform: rotate(135deg);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    z-index: 1;
+}
